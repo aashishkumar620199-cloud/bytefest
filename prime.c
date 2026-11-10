@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <math.h>
 void prime(int x){
      int i,flag=0;
     if(x<2){
     printf("%d is not a prime number",x);
     return;
     }
-    for(i=2;i<=sqrt(x);i++){
+    for(i=2;i*i<=x;i++){
         if(x%i==0){
         flag=1;
         break;
